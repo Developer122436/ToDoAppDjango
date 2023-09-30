@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block title %}Edit Task{% endblock %}
+
+{% block content %}
+    <div class="row d-flex justify-content-center">
+        <div class="col-6 lf my-4">
+            <h4 class="text-center alert alert-info">Add Task</h4>
+            <form method="post" class="py-4">
+                {% csrf_token %}
+                <div class="form-group">
+                    <label for="editTask">Edit Task</label>
+                    <input type="text" class="form-control" id="editTask" name="editTask" value="{{ task.task }}" placeholder="Enter task" required>
+                </div>
+                <button type="submit" class="btn btn-success btn-block">Update Task</button>
+            </form>
+        </div>
+    </div>
+{% endblock %}

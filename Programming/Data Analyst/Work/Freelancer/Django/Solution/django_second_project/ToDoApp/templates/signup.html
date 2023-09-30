@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Sign up
+{% endblock %}
+
+{% block content %}
+    {% load static %}
+    {% if error %}
+        <h6 class="text-center alert alert-danger">{{error}}</h6>
+    {% endif %}
+    <div class="login-box">
+        <h1>Sign up</h1>
+        <form class="box" action="{% url 'signup_view' %}" method='POST'>
+            {% csrf_token %}
+            <div class="textbox">
+                <input type="text" name="username" placeholder="Username" required>
+            </div>
+            <div class="textbox">
+                <input type="text" name="email" placeholder="Email" required>
+            </div>
+            <div class="textbox">
+                <input type="password" name="password" placeholder="Password" required>
+            </div>
+            <div class="textbox">
+                <input type="password" name="repassword" placeholder="Re-password" required>
+            </div>
+            <button class="customBtn" type="submit">Signup</button>
+            <div class="signup-link">Already Have an Account? <a href="{% url 'signin_view' %}">Signin</a> here</div>
+        </form>
+    </div>
+{% endblock content %}

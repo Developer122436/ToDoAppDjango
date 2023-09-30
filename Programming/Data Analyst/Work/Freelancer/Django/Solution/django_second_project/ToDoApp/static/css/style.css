@@ -1,0 +1,199 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background:#95afc0;
+}
+
+h1.text-center.alert.alert-danger {
+    font-size: 2.45rem;
+    margin-bottom: 2.3rem;
+    border-radius: 12px;
+}
+
+.navbar{
+    font-size: 20px;
+    background: #161616;
+}
+
+.navbar-brand{
+    font-weight: bold;
+    font-size: 30px;
+    color: #f2f2f2;
+}
+
+.nav-item{
+    margin-left: 20px;
+}
+
+.nav-item a{
+    color: #f2f2f2 !important;
+}
+
+.disable_link{
+    pointer-events: none; /* Disable pointer events (no click) */
+    text-decoration: none; /* Remove underline */
+    cursor: not-allowed;
+}
+
+/*Signin and Signup page css code*/
+.login-box {
+    margin-top: 35px;
+    width: 370px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+}
+
+.login-box h1 {
+    float: left;
+    font-size: 40px;
+    border-bottom: 6px solid #4caf50;
+    margin-bottom: 30px;
+    padding: 13px 0;
+}
+
+.textbox {
+    width: 100%;
+    overflow: hidden;
+    font-size: 20px;
+    padding: 8px 0;
+    margin: 15px 0;
+    border-bottom: 1px solid #4caf50;
+}
+
+.textbox img {
+    width: 26px;
+    float: left;
+    text-align: center;
+}
+
+.textbox input {
+    border: none;
+    outline: none;
+    background: none;
+    color: black;
+    font-size: 18px;
+    width: 80%;
+    float: left;
+    margin: 2px 0 0 12px;
+}
+
+.customBtn {
+    width: 100%;
+    background: none;
+    border: 2px solid #4caf50;
+    color: black;
+    padding: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    margin: 12px 0;
+    transition: .4s linear;
+}
+
+.customBtn:hover{
+    background: #4caf50;
+    color: white;
+}
+
+.signup-link{
+    margin-top:5px;
+    color:black;
+}
+
+.pass-link{
+    margin-top:10px;
+}
+
+form .pass-link a,
+form .signup-link a{
+    color:black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+form .pass-link a:hover,
+form .signup-link a:hover{
+   text-decoration: underline;
+}
+
+/* home page css code */
+.lf, .rf {
+    border: 2px solid #d9dfe4;
+    border-radius: 10px;
+    background-color: #F0F8FF;
+}
+
+h4.text-center.alert.alert-info {
+    margin-top: 20px;
+}
+
+input.btn.btn-success {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    border-radius: 50px;
+}
+
+thead tr {
+    background-color: mediumturquoise;
+    color: currentColor;
+}
+
+label {
+    color: black;
+}
+
+/* Style the label containing the checkbox */
+/* Hide the default checkbox */
+.checkbox-label input[type="checkbox"] {
+    display: none;
+}
+
+/* Style the custom checkbox container */
+.checkbox-label {
+    position: relative;
+    padding-left: 30px; /* Adjust the padding as needed */
+    cursor: pointer;
+}
+
+/* Style the custom checkbox */
+.custom-checkbox::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 20px; /* Adjust the size of the checkbox */
+    height: 20px; /* Adjust the size of the checkbox */
+    border: 2px solid #333; /* Border color */
+    background-color: #fff; /* Background color */
+    border-radius: 3px;
+}
+
+/* Style the checked custom checkbox */
+.checkbox-label input[type="checkbox"]:checked + .custom-checkbox::before {
+    background-color: #333; /* Change the background color when checked */
+    content: "\2713"; /* Unicode checkmark character */
+    font-size: 16px; /* Adjust the font size as needed */
+    color: #fff; /* Checkmark color */
+    text-align: center;
+    line-height: 20px; /* Center the checkmark vertically */
+}
+
+.completed-task {
+    text-decoration: line-through; /* Strike through the text */
+    color: #888; /* Set a muted color for completed tasks */
+}
+
+.complete_column{
+    width: 15%;
+}
